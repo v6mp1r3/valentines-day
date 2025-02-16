@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>14 February</title>
+    <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+        :root {
+            --c1: #f6aca2;
+            --c2: #f49b90;
+            --c3: #f28b7d;
+            --c4: #f07a6a;
+            --c5: #ee6352;
+        }
+        body {
+            min-height: 100vh;
+            font-weight: bold;
+            font-size: 1.25rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            overflow: hidden;
+            background-color: #eff8e2;
+        }
+        .content {
+            display: flex;
+            align-content: center;
+            justify-content: center;
+        }
+        .text-shadows {
+            text-shadow: 3px 3px 0 var(--c2), 6px 6px 0 var(--c3), 
+            9px 9px var(--c4), 12px 12px 0 var(--c5);
+            font-family: bungee, sans-serif;
+            font-weight: 400;
+            text-transform: uppercase;
+            font-size: calc(2rem + 5vw);
+            text-align: center;
+            margin: 0;
+            color: var(--c1);
+            animation: shadows 1.2s ease-in infinite;
+            letter-spacing: 0.4rem;
+        }
+        @keyframes shadows {
+            0% { text-shadow: none; }
+            10% {
+                transform: translate(-3px, -3px);
+                text-shadow: 3px 3px 0 var(--c2);
+            }
+            20% {
+                transform: translate(-6px, -6px);
+                text-shadow: 3px 3px 0 var(--c2), 
+                6px 6px 0 var(--c3);
+            }
+            30% {
+                transform: translate(-9px, -9px);
+                text-shadow: 3px 3px 0 var(--c2), 
+                6px 6px 0 var(--c3), 9px 9px var(--c4);
+            }
+            40% {
+                transform: translate(-12px, -12px);
+                text-shadow: 3px 3px 0 var(--c2),
+                6px 6px 0 var(--c3), 9px 9px var(--c4),
+                12px 12px 0 var(--c5);
+            }
+            50% {
+                transform: translate(-12px, -12px);
+                text-shadow: 3px 3px 0 var(--c2),
+                6px 6px 0 var(--c3), 9px 9px var(--c4),
+                12px 12px 0 var(--c5);
+            }
+            60% {
+                text-shadow: 3px 3px 0 var(--c2),
+                6px 6px 0 var(--c3), 9px 9px var(--c4),
+                12px 12px 0 var(--c5);
+            }
+            70% {
+                text-shadow: 3px 3px 0 var(--c2),
+                6px 6px 0 var(--c3), 9px 9px var(--c4);
+            }
+            80% {
+                text-shadow: 3px 3px 0 var(--c2),
+                6px 6px 0 var(--c3);
+            }
+            90% { text-shadow: 3px 3px 0 var(--c2); }
+            100% { text-shadow: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h2 class="text-shadows">Happy Valentine's Day! ᡣ𐭩</h2>
+    </div>
+</body>
+</html>
